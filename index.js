@@ -10,6 +10,7 @@ var obj = {};
 
 Object.keys(process.env).forEach(function(key) {
   if(key.startsWith(inputPrefix) && key != "INPUT_FILE-NAME") {
+    console.log('print key %s', process.env[key])
     obj[key.substring(inputPrefix.length)] = process.env[key];
   }
 });
