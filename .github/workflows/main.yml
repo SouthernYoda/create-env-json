@@ -28,7 +28,7 @@ jobs:
         with:
           file-name: 'test.json'
           test: 'bla bla'
-          Test: 'ha ha'
+          Uppercase: 'ha ha'
       # Runs a set of commands using the runners shell
       - name: print resulting json
         run: cat test.json
